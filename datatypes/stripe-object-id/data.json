@@ -1,0 +1,20 @@
+{
+    "id": "stripe-object-id",
+    "title": "Stripe object ID",
+    "ddl": {
+        "sql-92": [
+            "VARCHAR(255) COLLATE utf8_bin"
+        ],
+        "mysql": [
+            "VARCHAR(255) COLLATE utf8_bin"
+        ]
+    },
+    "categories": ["colors"],
+    "tags": ["inaccurate", "incomplete"],
+    "keywords": [],
+    "visible": true,
+    "further-reading": {
+        "Stripe documentation": "http://example.com/",
+        "Stripe API reference": "http://example.com/"
+    }
+}

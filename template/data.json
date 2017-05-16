@@ -1,0 +1,17 @@
+{
+    "id": "",
+    "title": "",
+    "ddl": {
+        "sql-92": [
+            ""
+        ]
+    },
+    "categories": [],
+    "tags": [],
+    "keywords": [],
+    "visible": true,
+    "further-reading": {
+        "title": "http://example.com/"
+    },
+    "see-also": ["foo", "bar", "baz"]
+}

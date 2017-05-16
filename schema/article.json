@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://datatypes.io/schemas/article.json",
+    "title": "Article",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+        },
+        "title": {
+            "type": "string"
+        },
+        "ddl": {
+            "type": "object",
+            "patternProperties": {
+                "^(sql-92|mysql|mssql|oracle|postgresql|db2)$": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "categories": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": ["inaccurate", "incomplete"]
+            }
+        },
+        "keywords": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "minLength": 1
+            }
+        },
+        "visible": {
+            "type": "boolean"
+        },
+        "further-reading": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "string",
+                "format": "uri"
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": ["id", "title", "ddl", "visible"]
+}

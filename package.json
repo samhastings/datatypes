@@ -1,0 +1,13 @@
+{
+  "name": "datatypes-data",
+  "description": "Raw data from datatypes.io",
+  "author": "Sam Hastings",
+  "license": "CC-BY-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samhastings/datatypes.git"
+  },
+  "devDependencies": {
+    "ajv": "^5.1.1"
+  }
+}

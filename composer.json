@@ -1,0 +1,14 @@
+{
+    "name": "samhastings/datatypes-data",
+    "description": "Raw data from datatypes.io",
+    "license": "CC-BY-4.0",
+    "authors": [
+        {
+            "name": "Sam Hastings",
+            "homepage": "https://github.com/samhastings/"
+        }
+    ],
+    "autoload": {
+        "classmap": ["Data.php"]
+    }
+}
