@@ -9,6 +9,6 @@
         }
     ],
     "autoload": {
-        "classmap": ["Data.php"]
+        "classmap": ["Directory.php"]
     }
 }
