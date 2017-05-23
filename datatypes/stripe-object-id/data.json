@@ -11,7 +11,7 @@
     },
     "categories": ["colors"],
     "tags": ["inaccurate", "incomplete"],
-    "keywords": [],
+    "keywords": ["stripe", "api", "object id"],
     "visible": true,
     "further-reading": {
         "Stripe documentation": "http://example.com/",
