@@ -1,7 +1,7 @@
 const Ajv = require('ajv');
 const fs = require('fs');
 
-const root = `${__dirname}/../datatypes`;
+const root = `${__dirname}/../articles`;
 const dataFilename = 'data.json';
 const contentFilename = 'content.md';
 

@@ -8,7 +8,13 @@
             "homepage": "https://github.com/samhastings/"
         }
     ],
+    "require": {
+        "php": "^7.0.0"
+    },
     "autoload": {
-        "classmap": ["Directory.php"]
+        "classmap": [
+            "lib/ArticlesDirectory.php",
+            "lib/CategoriesDirectory.php"
+        ]
     }
 }

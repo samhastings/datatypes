@@ -2,16 +2,16 @@
 
 namespace DataTypes\Filesystem;
 
-class Directory implements \IteratorAggregate
+class ArticlesDirectory implements DirectoryInterface
 {
     /**
      * Returns the full path to the articles directory.
      *
      * @return string
      */
-    public function getPath()
+    public function getPath(): string
     {
-        return realpath(__DIR__.'/datatypes');
+        return realpath(__DIR__.'/articles');
     }
 
     /**
@@ -21,9 +21,9 @@ class Directory implements \IteratorAggregate
      *
      * @return string
      */
-    public function getArticlePath(string $id): string
+    public function getItemPath(string $id): string
     {
-        return $this->getPath().DIRECTORY_SEPARATOR.$id;
+        return $this->getPath().'/'.$id;
     }
 
     /**
@@ -35,9 +35,9 @@ class Directory implements \IteratorAggregate
      *
      * @return string
      */
-    public function getArticleFilePath(string $id, string $filename): string
+    public function getItemFilePath(string $id, string $filename): string
     {
-        return $this->getArticlePath($id).DIRECTORY_SEPARATOR.$filename;
+        return $this->getItemPath($id).'/'.$filename;
     }
 
     /**
@@ -47,9 +47,9 @@ class Directory implements \IteratorAggregate
      *
      * @return bool
      */
-    public function isValidArticle(string $id): bool
+    public function isValidItem(string $id): bool
     {
-        return is_dir($this->getArticlePath($id));
+        return is_dir($this->getItemPath($id));
     }
 
     /**
@@ -57,12 +57,17 @@ class Directory implements \IteratorAggregate
      *
      * @return string
      */
-    public function getSchema()
+    public function getSchema(): string
     {
         return file_get_contents(__DIR__.'/schema/article.json');
     }
 
-    public function getIterator()
+    /**
+     * Returns an iterator for looping through articles.
+     *
+     * @return Traversable
+     */
+    public function getIterator(): \Traversable
     {
         return new \CallbackFilterIterator(new \FilesystemIterator($this->getPath()), function (\SplFileInfo $item) {
             return $item->isDir();
