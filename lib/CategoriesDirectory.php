@@ -11,7 +11,7 @@ class CategoriesDirectory implements DirectoryInterface
      */
     public function getPath(): string
     {
-        return realpath(__DIR__.'/categories');
+        return realpath(__DIR__.'/../categories');
     }
 
     /**

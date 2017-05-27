@@ -11,7 +11,7 @@ class ArticlesDirectory implements DirectoryInterface
      */
     public function getPath(): string
     {
-        return realpath(__DIR__.'/articles');
+        return realpath(__DIR__.'/../articles');
     }
 
     /**
