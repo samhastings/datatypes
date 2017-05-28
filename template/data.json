@@ -10,8 +10,8 @@
     "tags": [],
     "keywords": [],
     "visible": true,
+    "related": [],
     "further-reading": {
         "title": "http://example.com/"
-    },
-    "see-also": ["foo", "bar", "baz"]
+    }
 }

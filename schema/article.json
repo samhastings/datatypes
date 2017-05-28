@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "id": "https://datatypes.io/schemas/article.json",
+    "id": "https://datatypes.io/schema/article.json",
     "title": "Article",
     "type": "object",
     "properties": {
@@ -34,7 +34,7 @@
             "type": "array",
             "items": {
                 "type": "string",
-                "enum": ["inaccurate", "incomplete"]
+                "enum": ["inaccurate", "incomplete", "proprietary"]
             }
         },
         "keywords": {
@@ -46,6 +46,13 @@
         },
         "visible": {
             "type": "boolean"
+        },
+        "related": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "minLength": 1
+            }
         },
         "further-reading": {
             "type": "object",
