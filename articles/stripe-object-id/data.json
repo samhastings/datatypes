@@ -9,7 +9,7 @@
             "VARCHAR(255) COLLATE utf8_bin"
         ]
     },
-    "categories": ["colors"],
+    "categories": ["apis"],
     "tags": ["inaccurate", "incomplete"],
     "keywords": ["stripe", "api", "object id"],
     "visible": true,
