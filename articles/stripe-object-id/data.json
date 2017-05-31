@@ -1,19 +1,14 @@
 {
     "id": "stripe-object-id",
     "title": "Stripe object ID",
-    "ddl": {
-        "sql-92": [
-            "VARCHAR(255) COLLATE utf8_bin"
-        ],
-        "mysql": [
-            "VARCHAR(255) COLLATE utf8_bin"
-        ]
-    },
+    "codeSnippet": [
+        "VARCHAR(255) COLLATE utf8_bin"
+    ],
     "categories": ["apis"],
     "tags": ["inaccurate", "incomplete"],
     "keywords": ["stripe", "api", "object id"],
     "visible": true,
-    "further-reading": {
+    "furtherReading": {
         "Stripe documentation": "http://example.com/",
         "Stripe API reference": "http://example.com/"
     }

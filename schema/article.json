@@ -11,18 +11,11 @@
         "title": {
             "type": "string"
         },
-        "ddl": {
-            "type": "object",
-            "patternProperties": {
-                "^(sql-92|mysql|mssql|oracle|postgresql|db2)$": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "minLength": 1
-                    }
-                }
-            },
-            "additionalProperties": false
+        "codeSnippet": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         },
         "categories": {
             "type": "array",
@@ -54,7 +47,7 @@
                 "minLength": 1
             }
         },
-        "further-reading": {
+        "furtherReading": {
             "type": "object",
             "additionalProperties": {
                 "type": "string",
@@ -63,5 +56,5 @@
         }
     },
     "additionalProperties": false,
-    "required": ["id", "title", "ddl", "visible"]
+    "required": ["id", "title", "codeSnippet", "visible"]
 }
