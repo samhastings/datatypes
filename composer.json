@@ -1,7 +1,7 @@
 {
     "name": "samhastings/datatypes-data",
     "description": "Raw data from datatypes.io",
-    "license": "CC-BY-4.0",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Sam Hastings",
