@@ -1,17 +1,15 @@
 {
     "id": "",
     "title": "",
-    "ddl": {
-        "sql-92": [
-            ""
-        ]
-    },
+    "codeSnippet": [
+        ""
+    ],
     "categories": [],
     "tags": [],
     "keywords": [],
     "visible": true,
     "related": [],
-    "further-reading": {
+    "furtherReading": {
         "title": "http://example.com/"
     }
 }
