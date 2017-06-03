@@ -12,9 +12,9 @@ We’ve included a validation script to ensure the integrity of submitted data. 
 
 The script:
 
-- Verifies the presence of `data.json` and `content.md` in the article directory.
-- Validates the contents of `data.json` based on a Json schema.
-- Checks that `content.md` is not empty.
+- Verifies the presence of `data.json`, `content.md` and `snippet.sql` in the article directory.
+- Validates the contents of `data.json` based on a [Json schema](schema/article.json).
+- Checks that `content.md` and `snippet.sql` are not empty.
 - Ensures the `id` field in the Json file corresponds with the article’s directory name.
 
 ### Usage
