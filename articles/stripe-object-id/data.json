@@ -1,15 +1,13 @@
 {
     "id": "stripe-object-id",
     "title": "Stripe object ID",
-    "codeSnippet": [
-        "VARCHAR(255) COLLATE utf8_bin"
-    ],
     "categories": ["apis"],
-    "tags": ["inaccurate", "incomplete"],
+    "tags": [],
     "keywords": ["stripe", "api", "object id"],
     "visible": true,
+    "related": [],
     "furtherReading": {
-        "Stripe documentation": "http://example.com/",
-        "Stripe API reference": "http://example.com/"
+        "Stripe documentation": "https://stripe.com/docs",
+        "Stripe API reference": "https://stripe.com/docs/api"
     }
 }

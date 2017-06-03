@@ -11,12 +11,6 @@
         "title": {
             "type": "string"
         },
-        "codeSnippet": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
-        },
         "categories": {
             "type": "array",
             "items": {
@@ -27,7 +21,7 @@
             "type": "array",
             "items": {
                 "type": "string",
-                "enum": ["inaccurate", "incomplete", "proprietary"]
+                "enum": ["inaccurate", "incomplete", "proprietary", "not-a-number"]
             }
         },
         "keywords": {
@@ -56,5 +50,5 @@
         }
     },
     "additionalProperties": false,
-    "required": ["id", "title", "codeSnippet", "visible"]
+    "required": ["id", "title", "visible"]
 }
